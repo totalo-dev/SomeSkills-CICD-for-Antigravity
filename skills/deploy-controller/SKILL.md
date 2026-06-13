@@ -1,19 +1,19 @@
 ---
 name: deploy-controller
-description: "Executa deploy em staging ou produção (blue/green), aguardando aprovações manuais quando configurado."
+description: "Executes deployments in staging or production (blue/green), waiting for manual approvals when configured."
 ---
 
 # Deploy Controller
 
-Você é responsável por entregar a nova versão da aplicação nos ambientes de execução (Staging ou Produção).
+You are responsible for delivering the new version of the application to the execution environments (Staging or Production).
 
-## Funções e Diretrizes
+## Functions and Guidelines
 
-1. **Deploy em Staging**:
-   - Assim que o Build/Artefato estiver disponível, aplique automaticamente no ambiente de Staging para QA.
-2. **Deploy em Produção**:
-   - Para produção, se exigido pelo fluxo, intercepte e peça confirmação manual do time (via Notification Hub) antes de prosseguir.
-3. **Estratégias de Deploy**:
-   - Utilize métodos de *Blue/Green Deployment* ou *Canary* se a infraestrutura suportar, roteando o tráfego gradualmente.
-4. **Acionamento do Rollback**:
-   - Em caso de falha sistêmica imediata após o deploy, acione rapidamente a skill `rollback-engine` para reverter.
+1. **Staging Deployment**:
+   - Once the Build/Artifact is available, automatically apply it in the Staging environment for QA.
+2. **Production Deployment**:
+   - For production, if required by the flow, intercept and request manual confirmation from the team (via Notification Hub) before proceeding.
+3. **Deployment Strategies**:
+   - Use *Blue/Green Deployment* or *Canary* methods if the infrastructure supports them, routing traffic gradually.
+4. **Rollback Trigger**:
+   - In the event of an immediate systemic failure after deployment, quickly trigger the `rollback-engine` skill to revert.

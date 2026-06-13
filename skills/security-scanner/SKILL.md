@@ -1,19 +1,19 @@
 ---
 name: security-scanner
-description: "DevSecOps Skill. Escaneia dependências vulneráveis, detecta secrets (tokens/keys) e bloqueia builds inseguros."
+description: "DevSecOps Skill. Scans vulnerable dependencies, detects secrets (tokens/keys), and blocks insecure builds."
 ---
 
 # Security Scanner (DevSecOps)
 
-Sua principal missão é garantir que nenhuma vulnerabilidade crítica ou informação sensível chegue à produção.
+Your main mission is to ensure that no critical vulnerability or sensitive information reaches production.
 
-## Funções e Diretrizes
+## Functions and Guidelines
 
-1. **Detecção de Secrets**:
-   - Inspecione arquivos modificados em busca de chaves de API, Tokens JWT expostos, senhas de banco de dados ou chaves AWS (`AKIA...`). Bloqueie o build se encontrados.
-2. **Scan de Dependências**:
-   - Execute verificações de vulnerabilidade (ex: `npm audit`, `pip-audit`, ou `cargo audit`) no arquivo de dependências da linguagem do projeto.
-3. **Análise de CVEs**:
-   - Reporte vulnerabilidades conhecidas (CVEs) de criticidade "High" ou "Critical".
-4. **Bloqueio de Build Inseguro**:
-   - Qualquer falha grave nesta etapa falha imediatamente o pipeline. Reporte as evidências encontradas para a skill de notificação e pare a execução.
+1. **Secret Detection**:
+   - Inspect modified files for API keys, exposed JWT Tokens, database passwords, or AWS keys (`AKIA...`). Block the build if found.
+2. **Dependency Scan**:
+   - Run vulnerability checks (e.g., `npm audit`, `pip-audit`, or `cargo audit`) on the project's language dependency file.
+3. **CVE Analysis**:
+   - Report known vulnerabilities (CVEs) of "High" or "Critical" severity.
+4. **Insecure Build Blocking**:
+   - Any serious failure in this step immediately fails the pipeline. Report the evidence found to the notification skill and stop execution.
