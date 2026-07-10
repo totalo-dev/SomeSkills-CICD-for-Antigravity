@@ -19,7 +19,7 @@ This plugin bundles various specialized skills designed to streamline the softwa
 - **Rollback Engine** (`rollback-engine`): Detects post-deployment failures and automatically reverts the application to its last stable state.
 - **Security Scanner** (`security-scanner`): DevSecOps skill. Scans for vulnerable dependencies, detects secrets (tokens/keys), and blocks insecure builds.
 - **Test Orchestrator** (`test-orchestrator`): Centralizes and executes tests (Unit, Integration, E2E), optimizing execution time through parallelization.
-- **Smart Trigger** (`trigger-inteligente`): Decides when the CI/CD pipeline should run. Detects pushes, PRs, tags, ignores non-impactful commits, and prioritizes branches.
+- **Smart Trigger** (`smart-trigger`): Decides when the CI/CD pipeline should run. Detects pushes, PRs, tags, ignores non-impactful commits, and prioritizes branches.
 
 ## 🛠️ Usage
 
